@@ -1,0 +1,187 @@
+:root {
+    /* colors */
+    --texto-primario: #dddddd;
+    --texto-secundario: #d1d1d1;
+    --fondo-primario: #0f0921;
+    --fondo-primario-transparente: #0f092180;
+    --fondo-secundario: #0a0c13;
+    --color-primario: #191919;
+    --color-primario-apagado: #2422a3;
+    --color-secundario: #9b70f9;
+    --color-terciario: #6f6f6f;
+  
+    /* sizes */
+    --presentacion-titulo-tamanio: 4rem;
+    --presentacion-titulo-tamanio-grande: 3.4rem;
+    --presentacion-descripcion-tamanio: 1.2rem;
+    --titulo-tamanio: 3rem;
+    --sub-titulo-tamanio: 2rem;
+    --texto-tamanio: 1.1rem;
+    --enlaces-tamanio: 1.2rem;
+    --texto-peso-grueso: 700;
+    --texto-peso-regular: 400;
+    --texto-peso-fino: 300;
+}
+html {
+    box-sizing: border-box;
+    font-size: 62.5%;
+  }
+  *, *:before, *:after {
+    box-sizing: inherit;
+  }
+
+  body {
+    background-color: beige;
+    
+    position: relative;
+  }
+ 
+
+
+h1 {
+    text-align: left;
+    font-weight: 800;
+    position: relative;
+}
+
+   span {
+    font-size: 70%;
+    color: #0a0c13;
+  
+   }
+
+   .encabezado {
+    position: absolute; 
+    width: 100%; 
+   }
+   .navegacion{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: transparent;
+    width: 100%;
+   }
+   .enlaces {
+    display: flex;
+    list-style-type: none;
+    width: 50%;
+    justify-content: space-around;
+   
+  
+    }
+    
+   
+   .enlaces__enlace, .navegacion__enlace, .boton__boton_oscuro {
+    text-decoration: none;  
+   
+   }
+  
+
+   .presentacion {
+    background-image: url(../PORTFOLIO/Assets/Img/Profile/mujeroficina.png) ;
+    height: 60vh;
+    width: 100%;
+    background-position: center;
+    background-size: cover;
+   
+    
+   }
+   .presentacion__contenedor_info {
+    width: 100%;
+    height: 100%;
+    padding: 0px;
+    display: flex;
+   flex-direction: column;
+   justify-content: center;
+   align-items: flex-start;
+   gap: 2rem;
+   padding: 15px;
+   background-color: rgba(170, 170, 156, 0.2);
+   }
+
+   .presentacion__titulo{
+    color: rgb(173, 149, 11);
+    text-align: center;
+    font-size: 3rem;
+    
+   }
+
+   .presentacion__parrafo {
+    color: black;
+    font-size: 1.5rem;
+    max-width: 400px;
+  }
+
+  .presentacion__contenedor_botones{
+    display: flex;
+    justify-content: center;
+    width: 420px;
+    gap: 1rem;
+  }
+  .articulo {
+    width: 100%;
+    height: 100%;
+    gap: 1rem;
+  }
+
+  .sobre_mi {
+
+  }
+
+  .articulo__titulo {
+    font-size: 3rem;
+    text-align: center;
+    margin-bottom: 1rem;
+    
+  }
+  .descripcion__parrafo {
+    font-size: 2rem;
+   
+  }
+
+  .pie_de_pagina {
+    width: 100%;
+    height: 200px;
+    display: flex;
+    
+    border-top: 1px solid #d1d1d1;
+    
+  }
+  .pie_de_pagina__columna {
+    display: flex;
+    flex-direction: column;
+    height: 50%;
+   width: 100%;
+  
+  }
+  
+  .pie_de_pagina__titulo_columna {
+    font-size: 2rem;
+    text-align: center; 
+    
+  }
+  .enlaces_redes {
+    width: 100%;
+  }
+  .enlaces__item {
+   
+  }
+  .enlaces__enlace_footer {
+  }
+  .enlaces__icono {
+    width: 50px;
+    
+  }
+/* tarjetas*/
+
+  .contenedor_tarjetas_grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr auto;
+    gap: 2rem;
+  }
+  .tarjeta__imagen {
+    width: 50%;
+    height: 100%;
+    object-fit: cover;
+  }
