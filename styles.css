@@ -78,7 +78,7 @@ h1 {
   
 
    .presentacion {
-    background-image: url(PORTFOLIO/Assets/Img/Profile/mujeroficina.png) ;
+    background-image: url("./Assets/Img/Profile/mujeroficina.png");
     height: 60vh;
     width: 100%;
     background-position: center;
